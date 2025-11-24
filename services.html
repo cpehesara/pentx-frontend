@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pent X Solutions - Full suite of software services including web development, mobile apps, UI/UX design, cloud deployment, and more.">
+    <meta name="keywords" content="web development, mobile app development, UI/UX design, software integration, cloud deployment, e-commerce solutions, Sri Lanka">
+    <meta name="author" content="Pent X Software Solutions">
+    <meta name="robots" content="index, follow">
+    
+    <title>Our Solutions - Pent X</title>
+    
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Balthazar&family=Share+Tech&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/services.css">
+    
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link rel="apple-touch-icon" href="assets/images/logo.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="brand-text">Pent <span class="brand-highlight">X</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Solutions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Success</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link btn-demo" href="demo.html">Book a Demo</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="page-title">Our Solutions & Services</h1>
+                    <p class="page-subtitle">From concept to deployment – comprehensive software services tailored to your business needs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th"></i> All Services
+                </button>
+                <button class="filter-btn" data-filter="development">
+                    <i class="fas fa-code"></i> Development
+                </button>
+                <button class="filter-btn" data-filter="design">
+                    <i class="fas fa-palette"></i> Design
+                </button>
+                <button class="filter-btn" data-filter="cloud">
+                    <i class="fas fa-cloud"></i> Cloud & DevOps
+                </button>
+                <button class="filter-btn" data-filter="business">
+                    <i class="fas fa-briefcase"></i> Business Solutions
+                </button>
+                <button class="filter-btn" data-filter="support">
+                    <i class="fas fa-headset"></i> Support & Maintenance
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Counter -->
+    <div class="container">
+        <div class="results-counter">
+            Showing <span id="resultCount">8</span> of <span id="totalCount">8</span> services
+        </div>
+    </div>
+
+    <!-- Service Categories Section -->
+    <section class="services-section py-5">
+        <div class="container">
+            <div class="row g-4" id="servicesGrid">
+                <!-- Web Development -->
+                <div class="col-lg-6 service-item" data-category="development" id="web-development">
+                    <div class="service-detail-card">
+                        <div class="service-header">
+                            <div class="service-icon-large">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h2>Web Development</h2>
+                        </div>
+                        <p class="lead">Custom-built websites and web apps using modern frameworks (React, Vue, Laravel).</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Responsive design for all devices</li>
+                            <li><i class="fas fa-check-circle"></i> Modern JavaScript frameworks (React, Vue.js)</li>
+                            <li><i class="fas fa-check-circle"></i> Backend with Laravel, Node.js</li>
+                            <li><i class="fas fa-check-circle"></i> Database integration (MySQL, PostgreSQL)</li>
+                            <li><i class="fas fa-check-circle"></i> RESTful API development</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Mobile App Development -->
+                <div class="col-lg-6 service-item" data-category="development" id="mobile-apps">
+                    <div class="service-detail-card">
+                        <div class="service-header">
+                            <div class="service-icon-large">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h2>Mobile App Development</h2>
+                        </div>
+                        <p class="lead">Native and hybrid apps for Android & iOS built with Flutter, React Native, or Kotlin.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Cross-platform development (Flutter, React Native)</li>
+                            <li><i class="fas fa-check-circle"></i> Native iOS (Swift) and Android (Kotlin) apps</li>
+                            <li><i class="fas fa-check-circle"></i> Smooth UI/UX with animations</li>
+                            <li><i class="fas fa-check-circle"></i> Push notifications integration</li>
+                            <li><i class="fas fa-check-circle"></i> App store deployment support</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- UI/UX Design -->
+                <div class="col-lg-6 service-item" data-category="design" id="uiux-design">
+                    <div class="service-detail-card">
+                        <div class="service-header">
+                            <div class="service-icon-large">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <h2>UI/UX Design</h2>
+                        </div>
+                        <p class="lead">Clean, user-friendly interfaces designed with Figma, Adobe XD, and user research.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> User research and persona development</li>
+                            <li><i class="fas fa-check-circle"></i> Wireframing and prototyping</li>
+                            <li><i class="fas fa-check-circle"></i> Visual design with Figma/Adobe XD</li>
+                            <li><i class="fas fa-check-circle"></i> Usability testing and refinement</li>
+                            <li><i class="fas fa-check-circle"></i> Responsive design principles</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Software Integration -->
+                <div class="col-lg-6 service-item" data-category="business" id="software-integration">
+                    <div class="service-detail-card">
+                        <div class="service-header">
+                            <div class="service-icon-large">
+                                <i class="fas fa-plug"></i>
+                            </div>
+                            <h2>Software Integration</h2>
+                        </div>
+                        <p class="lead">Connect and automate workflows across multiple platforms (e.g., APIs, ERP, CRM).</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Third-party API integration</li>
+                            <li><i class="fas fa-check-circle"></i> ERP and CRM system connectivity</li>
+                            <li><i class="fas fa-check-circle"></i> Payment gateway integration</li>
+                            <li><i class="fas fa-check-circle"></i> Workflow automation</li>
+                            <li><i class="fas fa-check-circle"></i> Data synchronization</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Cloud Deployment -->
+                <div class="col-lg-6 service-item" data-category="cloud" id="cloud-solutions">
+                    <div class="service-detail-card">
+                        <div class="service-header">
+                            <div class="service-icon-large">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                            <h2>Cloud Deployment</h2>
+                        </div>
+                        <p class="lead">Host your applications securely on AWS, Azure, or DigitalOcean with CI/CD pipelines.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> AWS, Azure, Google Cloud deployment</li>
+                            <li><i class="fas fa-check-circle"></i> CI/CD pipeline setup</li>
+                            <li><i class="fas fa-check-circle"></i> Docker containerization</li>
+                            <li><i class="fas fa-check-circle"></i> Load balancing and auto-scaling</li>
+                            <li><i class="fas fa-check-circle"></i> Security and monitoring</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Maintenance & Support -->
+                <div class="col-lg-6 service-item" data-category="support" id="maintenance">
+                    <div class="service-detail-card">
+                        <div class="service-header">
+                            <div class="service-icon-large">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <h2>Maintenance & Support</h2>
+                        </div>
+                        <p class="lead">Ongoing updates, bug fixes, and performance optimization after product launch.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Regular updates and patches</li>
+                            <li><i class="fas fa-check-circle"></i> Bug fixing and troubleshooting</li>
+                            <li><i class="fas fa-check-circle"></i> Performance monitoring</li>
+                            <li><i class="fas fa-check-circle"></i> Security updates</li>
+                            <li><i class="fas fa-check-circle"></i> 24/7 technical support</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Data Dashboards -->
+                <div class="col-lg-6 service-item" data-category="business" id="data-dashboards">
+                    <div class="service-detail-card">
+                        <div class="service-header">
+                            <div class="service-icon-large">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <h2>Data Dashboards & Analytics</h2>
+                        </div>
+                        <p class="lead">Real-time dashboards for business insights using tools like Power BI or custom D3.js.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Custom dashboard development</li>
+                            <li><i class="fas fa-check-circle"></i> Data visualization (D3.js, Chart.js)</li>
+                            <li><i class="fas fa-check-circle"></i> Power BI integration</li>
+                            <li><i class="fas fa-check-circle"></i> Real-time analytics</li>
+                            <li><i class="fas fa-check-circle"></i> Business intelligence reporting</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- E-commerce Solutions -->
+                <div class="col-lg-6 service-item" data-category="business development" id="ecommerce">
+                    <div class="service-detail-card">
+                        <div class="service-header">
+                            <div class="service-icon-large">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <h2>E-commerce Solutions</h2>
+                        </div>
+                        <p class="lead">Online stores with custom features, payment integration, and inventory tools.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Custom e-commerce platforms</li>
+                            <li><i class="fas fa-check-circle"></i> Payment gateway integration (Stripe, PayPal)</li>
+                            <li><i class="fas fa-check-circle"></i> Inventory management systems</li>
+                            <li><i class="fas fa-check-circle"></i> Shopping cart and checkout optimization</li>
+                            <li><i class="fas fa-check-circle"></i> Order tracking and management</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- No Results Message -->
+            <div class="no-results" id="noResults">
+                <i class="fas fa-search"></i>
+                <h3>No Services Found</h3>
+                <p>Try selecting a different filter category to explore our other services.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tailored Solutions Section -->
+    <section class="tailored-solutions py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Tailored Solutions for Every Need</h2>
+                <p class="section-subtitle">Custom approaches designed specifically for your industry and business goals</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="solution-type-card">
+                        <div class="solution-type-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3>Custom Business Software</h3>
+                        <p>Automate tasks, streamline workflows, and manage teams with tailored tools.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="solution-type-card">
+                        <div class="solution-type-icon">
+                            <i class="fas fa-mobile-screen"></i>
+                        </div>
+                        <h3>Mobile-first Platforms</h3>
+                        <p>We create solutions optimized for mobile users – from ordering apps to CRMs.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="solution-type-card">
+                        <div class="solution-type-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Data Dashboards & Insights</h3>
+                        <p>Unlock your data's potential with live reports and business intelligence.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="solution-type-card">
+                        <div class="solution-type-icon">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <h3>System Integration</h3>
+                        <p>Bring disconnected systems together (ERP, CRM, payment gateways).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Ready to Start Your Project?</h2>
+            <p class="lead mb-4">Let's discuss how we can build the perfect solution for your business needs.</p>
+            <div class="cta-buttons">
+                <a href="projects.html" class="btn btn-primary btn-lg">See a Case Study</a>
+                <a href="demo.html" class="btn btn-outline-light btn-lg">Book a Free Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-title">
+                        <span class="brand-text">Pent <span class="brand-highlight">X</span></span>
+                    </h5>
+                    <p class="text-muted">We Build Smart Software for Businesses.</p>
+                    <div class="social-links mt-3">
+                        <a href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.x.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61581018747852" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.github.com" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Solutions</a></li>
+                        <li><a href="projects.html">Success</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="demo.html">Book a Demo</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="#web-development">Web Development</a></li>
+                        <li><a href="#mobile-apps">Mobile Apps</a></li>
+                        <li><a href="#uiux-design">UI/UX Design</a></li>
+                        <li><a href="#cloud-solutions">Cloud Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Contact Us</h5>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Colombo, Sri Lanka</li>
+                        <li><i class="fas fa-phone me-2"></i> +94 77 550 8185</li>
+                        <li><i class="fas fa-envelope me-2"></i> pentxcorporation@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0 text-muted">&copy; 2025 Pent X Software Solutions. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/services.js"></script>
+</body>
+</html>

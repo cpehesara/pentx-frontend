@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book a free demo with Pent X Software Solutions - Get a hands-on preview of our custom software solutions.">
+    
+    <title>Book a Demo - Pent X</title>
+    
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Balthazar&family=Share+Tech&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/contact-demo.css">
+    
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="brand-text">Pent <span class="brand-highlight">X</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Solutions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Success</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link btn-demo active" href="demo.html">Book a Demo</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="page-title">Try It Yourself - Book a Demo</h1>
+                    <p class="page-subtitle">Get a hands-on preview of our software solutions. Fill out the form and our team will be in touch.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Booking Section -->
+    <section class="demo-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="demo-form-wrapper">
+                        <div class="text-center mb-5">
+                            <div class="demo-icon mb-3">
+                                <i class="fas fa-calendar-check"></i>
+                            </div>
+                            <h2>Schedule Your Free Demo</h2>
+                            <p class="text-muted">Our team will reach out within 24 hours to schedule a convenient time for your personalized demo.</p>
+                        </div>
+
+                        <form id="demoForm" class="needs-validation" novalidate>
+                            <div class="row g-4">
+                                <!-- Personal Information -->
+                                <div class="col-12">
+                                    <h4 class="form-section-title">Personal Information</h4>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="fullName" class="form-label">Full Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="fullName" name="fullName" required>
+                                    <div class="invalid-feedback">
+                                        Please enter your full name.
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email Address <span class="text-danger">*</span></label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                    <div class="invalid-feedback">
+                                        Please enter a valid email address.
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label">Phone Number <span class="text-danger">*</span></label>
+                                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="+94 77 123 4567" required>
+                                    <div class="invalid-feedback">
+                                        Please enter your phone number.
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="company" class="form-label">Company Name</label>
+                                    <input type="text" class="form-control" id="company" name="company" placeholder="Your company name">
+                                </div>
+
+                                <!-- Project Details -->
+                                <div class="col-12 mt-4">
+                                    <h4 class="form-section-title">Project Details</h4>
+                                </div>
+
+                                <div class="col-12">
+                                    <label class="form-label">Services You're Interested In <span class="text-danger">*</span></label>
+                                    <small class="d-block text-muted mb-2">Select all that apply</small>
+                                    
+                                    <div class="service-selection">
+                                        <label class="service-checkbox-card">
+                                            <input type="checkbox" name="services[]" value="web-development">
+                                            <div class="service-card-content">
+                                                <div class="service-icon-wrapper">
+                                                    <i class="fas fa-code"></i>
+                                                </div>
+                                                <div class="service-info">
+                                                    <h5>Web Development</h5>
+                                                    <p>Custom websites & web apps</p>
+                                                </div>
+                                                <div class="service-check-icon">
+                                                    <i class="fas fa-check"></i>
+                                                </div>
+                                            </div>
+                                        </label>
+
+                                        <label class="service-checkbox-card">
+                                            <input type="checkbox" name="services[]" value="mobile-apps">
+                                            <div class="service-card-content">
+                                                <div class="service-icon-wrapper">
+                                                    <i class="fas fa-mobile-alt"></i>
+                                                </div>
+                                                <div class="service-info">
+                                                    <h5>Mobile App Development</h5>
+                                                    <p>iOS & Android applications</p>
+                                                </div>
+                                                <div class="service-check-icon">
+                                                    <i class="fas fa-check"></i>
+                                                </div>
+                                            </div>
+                                        </label>
+
+                                        <label class="service-checkbox-card">
+                                            <input type="checkbox" name="services[]" value="uiux-design">
+                                            <div class="service-card-content">
+                                                <div class="service-icon-wrapper">
+                                                    <i class="fas fa-palette"></i>
+                                                </div>
+                                                <div class="service-info">
+                                                    <h5>UI/UX Design</h5>
+                                                    <p>User interface & experience</p>
+                                                </div>
+                                                <div class="service-check-icon">
+                                                    <i class="fas fa-check"></i>
+                                                </div>
+                                            </div>
+                                        </label>
+
+                                        <label class="service-checkbox-card">
+                                            <input type="checkbox" name="services[]" value="software-integration">
+                                            <div class="service-card-content">
+                                                <div class="service-icon-wrapper">
+                                                    <i class="fas fa-plug"></i>
+                                                </div>
+                                                <div class="service-info">
+                                                    <h5>Software Integration</h5>
+                                                    <p>API & system connectivity</p>
+                                                </div>
+                                                <div class="service-check-icon">
+                                                    <i class="fas fa-check"></i>
+                                                </div>
+                                            </div>
+                                        </label>
+
+                                        <label class="service-checkbox-card">
+                                            <input type="checkbox" name="services[]" value="cloud-solutions">
+                                            <div class="service-card-content">
+                                                <div class="service-icon-wrapper">
+                                                    <i class="fas fa-cloud"></i>
+                                                </div>
+                                                <div class="service-info">
+                                                    <h5>Cloud Deployment</h5>
+                                                    <p>AWS, Azure & hosting</p>
+                                                </div>
+                                                <div class="service-check-icon">
+                                                    <i class="fas fa-check"></i>
+                                                </div>
+                                            </div>
+                                        </label>
+
+                                        <label class="service-checkbox-card">
+                                            <input type="checkbox" name="services[]" value="maintenance">
+                                            <div class="service-card-content">
+                                                <div class="service-icon-wrapper">
+                                                    <i class="fas fa-tools"></i>
+                                                </div>
+                                                <div class="service-info">
+                                                    <h5>Maintenance & Support</h5>
+                                                    <p>Ongoing updates & fixes</p>
+                                                </div>
+                                                <div class="service-check-icon">
+                                                    <i class="fas fa-check"></i>
+                                                </div>
+                                            </div>
+                                        </label>
+
+                                        <label class="service-checkbox-card">
+                                            <input type="checkbox" name="services[]" value="data-dashboards">
+                                            <div class="service-card-content">
+                                                <div class="service-icon-wrapper">
+                                                    <i class="fas fa-chart-bar"></i>
+                                                </div>
+                                                <div class="service-info">
+                                                    <h5>Data Dashboards</h5>
+                                                    <p>Analytics & reporting</p>
+                                                </div>
+                                                <div class="service-check-icon">
+                                                    <i class="fas fa-check"></i>
+                                                </div>
+                                            </div>
+                                        </label>
+
+                                        <label class="service-checkbox-card">
+                                            <input type="checkbox" name="services[]" value="ecommerce">
+                                            <div class="service-card-content">
+                                                <div class="service-icon-wrapper">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </div>
+                                                <div class="service-info">
+                                                    <h5>E-commerce Solutions</h5>
+                                                    <p>Online stores & payments</p>
+                                                </div>
+                                                <div class="service-check-icon">
+                                                    <i class="fas fa-check"></i>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    <!-- Selected Services Summary -->
+                                    <div class="selected-services-summary" id="selectedServicesSummary">
+                                        <h6><i class="fas fa-check-circle me-2"></i>Selected Services (<span id="selectedCount">0</span>)</h6>
+                                        <div class="selected-service-tags" id="selectedServiceTags"></div>
+                                    </div>
+                                    
+                                    <div class="invalid-feedback d-block services-error-hidden" id="servicesError">
+                                        Please select at least one service.
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="preferredDate" class="form-label">Preferred Date <span class="text-danger">*</span></label>
+                                    <input type="date" class="form-control" id="preferredDate" name="preferredDate" required>
+                                    <div class="invalid-feedback">
+                                        Please select a preferred date.
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="preferredTime" class="form-label">Preferred Time <span class="text-danger">*</span></label>
+                                    <select class="form-select" id="preferredTime" name="preferredTime" required>
+                                        <option value="" selected disabled>Choose a time...</option>
+                                        <option value="9am-11am">9:00 AM - 11:00 AM</option>
+                                        <option value="11am-1pm">11:00 AM - 1:00 PM</option>
+                                        <option value="1pm-3pm">1:00 PM - 3:00 PM</option>
+                                        <option value="3pm-5pm">3:00 PM - 5:00 PM</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please select a preferred time.
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="projectDetails" class="form-label">Tell Us About Your Project</label>
+                                    <textarea class="form-control" id="projectDetails" name="projectDetails" rows="5" placeholder="Please describe your project requirements, goals, and any specific features you're interested in..."></textarea>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="budget" class="form-label">Estimated Budget</label>
+                                    <select class="form-select" id="budget" name="budget">
+                                        <option value="" selected>Select budget range (optional)</option>
+                                        <option value="under-5k">Under $5,000</option>
+                                        <option value="5k-10k">$5,000 - $10,000</option>
+                                        <option value="10k-25k">$10,000 - $25,000</option>
+                                        <option value="25k-50k">$25,000 - $50,000</option>
+                                        <option value="50k-plus">$50,000+</option>
+                                        <option value="not-sure">Not Sure Yet</option>
+                                    </select>
+                                </div>
+
+                                <!-- Communication Preference -->
+                                <div class="col-12 mt-4">
+                                    <h4 class="form-section-title">Communication Preference</h4>
+                                </div>
+
+                                <div class="col-12">
+                                    <label class="form-label">How would you like to receive the demo?</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="demoType" id="demoOnline" value="online" checked>
+                                        <label class="form-check-label" for="demoOnline">
+                                            <i class="fas fa-video me-2"></i> Online Video Call (Zoom/Google Meet)
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="demoType" id="demoInPerson" value="in-person">
+                                        <label class="form-check-label" for="demoInPerson">
+                                            <i class="fas fa-handshake me-2"></i> In-Person Meeting
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="demoType" id="demoPhone" value="phone">
+                                        <label class="form-check-label" for="demoPhone">
+                                            <i class="fas fa-phone me-2"></i> Phone Call
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <div class="col-12 mt-4">
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-primary btn-lg w-100" onsubmit="submitDemoForm(event)">
+                                            <i class="fas fa-calendar-check me-2"></i> Book My Demo
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div id="demoFormMessage" class="alert mt-4 form-message-hidden"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What to Expect Section -->
+    <section class="what-to-expect py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">What to Expect from Your Demo</h2>
+                <p class="section-subtitle">Here's what happens next</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="expect-card">
+                        <div class="expect-number">1</div>
+                        <div class="expect-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h4>Confirmation</h4>
+                        <p>We'll confirm your booking within 24 hours via email or phone.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="expect-card">
+                        <div class="expect-number">2</div>
+                        <div class="expect-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h4>Discovery Call</h4>
+                        <p>Brief discussion about your needs and goals before the demo.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="expect-card">
+                        <div class="expect-number">3</div>
+                        <div class="expect-icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <h4>Live Demo</h4>
+                        <p>Interactive demonstration tailored to your specific requirements.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="expect-card">
+                        <div class="expect-number">4</div>
+                        <div class="expect-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h4>Custom Proposal</h4>
+                        <p>Receive a detailed proposal with timeline and pricing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="section-title text-center mb-5">Frequently Asked Questions</h2>
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    How long does a demo session take?
+                                </button>
+                            </h3>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    A typical demo session lasts 30-45 minutes, but we can adjust based on your needs and questions.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Is the demo really free?
+                                </button>
+                            </h3>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes! Our demos are completely free with no obligation. We want you to see exactly what we can do for your business.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Can I reschedule my demo?
+                                </button>
+                            </h3>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Absolutely! Just contact us at least 24 hours in advance, and we'll be happy to reschedule to a time that works better for you.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    What should I prepare for the demo?
+                                </button>
+                            </h3>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Just bring your questions and ideas! If you have specific requirements or examples of what you're looking for, that's helpful but not required.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-title">
+                        <span class="brand-text">Pent <span class="brand-highlight">X</span></span>
+                    </h5>
+                    <p class="text-muted">We Build Smart Software for Businesses.</p>
+                    <div class="social-links mt-3">
+                        <a href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.x.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61581018747852" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.github.com" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Solutions</a></li>
+                        <li><a href="projects.html">Success</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="demo.html">Book a Demo</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="services.html#web-development">Web Development</a></li>
+                        <li><a href="services.html#mobile-apps">Mobile Apps</a></li>
+                        <li><a href="services.html#uiux-design">UI/UX Design</a></li>
+                        <li><a href="services.html#cloud-solutions">Cloud Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Contact Us</h5>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Colombo, Sri Lanka</li>
+                        <li><i class="fas fa-phone me-2"></i> +94 77 550 8185</li>
+                        <li><i class="fas fa-envelope me-2"></i> pentxcorporation@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0 text-muted">&copy; 2025 Pent X Software Solutions. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/forms.js"></script>
+</body>
+</html>

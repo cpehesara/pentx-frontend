@@ -1,0 +1,130 @@
+{
+  "services": [
+    {
+      "id": "web-development",
+      "title": "Web Development",
+      "shortDescription": "Modern, responsive websites built with React, Bootstrap, and Node.js.",
+      "fullDescription": "We create cutting-edge web applications using the latest technologies and frameworks. Our team specializes in building scalable, secure, and high-performance websites that deliver exceptional user experiences.",
+      "icon": "fa-code",
+      "features": [
+        "React & Next.js Development",
+        "Responsive Design",
+        "Progressive Web Apps (PWA)",
+        "E-commerce Solutions",
+        "Custom CMS Development",
+        "API Integration"
+      ],
+      "technologies": ["React", "Node.js", "Bootstrap", "MongoDB", "PostgreSQL", "AWS"],
+      "pricing": {
+        "basic": "$5,000 - $10,000",
+        "standard": "$10,000 - $25,000",
+        "enterprise": "Custom Quote"
+      }
+    },
+    {
+      "id": "mobile-apps",
+      "title": "Mobile Apps",
+      "shortDescription": "iOS and Android apps that drive user engagement.",
+      "fullDescription": "Build native and cross-platform mobile applications that engage users and drive business growth. We develop intuitive, feature-rich mobile apps for iOS and Android platforms.",
+      "icon": "fa-mobile-alt",
+      "features": [
+        "Native iOS Development",
+        "Native Android Development",
+        "Cross-platform (React Native)",
+        "App Store Optimization",
+        "Push Notifications",
+        "In-app Purchases"
+      ],
+      "technologies": ["Swift", "Kotlin", "React Native", "Flutter", "Firebase", "SQLite"],
+      "pricing": {
+        "basic": "$15,000 - $30,000",
+        "standard": "$30,000 - $60,000",
+        "enterprise": "Custom Quote"
+      }
+    },
+    {
+      "id": "uiux-design",
+      "title": "UI/UX Design",
+      "shortDescription": "Intuitive interfaces crafted for exceptional user experiences.",
+      "fullDescription": "Create beautiful, user-centered designs that enhance engagement and conversion. Our design process focuses on understanding your users and creating interfaces that delight.",
+      "icon": "fa-palette",
+      "features": [
+        "User Research & Analysis",
+        "Wireframing & Prototyping",
+        "Visual Design",
+        "Interaction Design",
+        "Usability Testing",
+        "Design Systems"
+      ],
+      "technologies": ["Figma", "Adobe XD", "Sketch", "InVision", "Principle", "Miro"],
+      "pricing": {
+        "basic": "$3,000 - $8,000",
+        "standard": "$8,000 - $20,000",
+        "enterprise": "Custom Quote"
+      }
+    },
+    {
+      "id": "cloud-solutions",
+      "title": "Cloud Solutions",
+      "shortDescription": "Secure, scalable cloud infrastructure for growing businesses.",
+      "fullDescription": "Deploy and manage your applications on secure, scalable cloud infrastructure. We help businesses migrate to the cloud and optimize their cloud operations for maximum efficiency.",
+      "icon": "fa-cloud",
+      "features": [
+        "Cloud Migration",
+        "Infrastructure as Code",
+        "DevOps & CI/CD",
+        "Cloud Security",
+        "Monitoring & Analytics",
+        "Cost Optimization"
+      ],
+      "technologies": ["AWS", "Azure", "Google Cloud", "Docker", "Kubernetes", "Terraform"],
+      "pricing": {
+        "basic": "$2,000/month",
+        "standard": "$5,000/month",
+        "enterprise": "Custom Quote"
+      }
+    },
+    {
+      "id": "enterprise-software",
+      "title": "Enterprise Software",
+      "shortDescription": "Custom enterprise solutions for complex business needs.",
+      "fullDescription": "Develop robust enterprise software solutions tailored to your organization's specific requirements. Our team has extensive experience building scalable systems for large organizations.",
+      "icon": "fa-building",
+      "features": [
+        "ERP Systems",
+        "CRM Solutions",
+        "Business Intelligence",
+        "Workflow Automation",
+        "Legacy System Modernization",
+        "System Integration"
+      ],
+      "technologies": ["Java", "C#", ".NET", "Spring Boot", "Microservices", "Oracle"],
+      "pricing": {
+        "basic": "$50,000+",
+        "standard": "$100,000+",
+        "enterprise": "Custom Quote"
+      }
+    },
+    {
+      "id": "consulting",
+      "title": "IT Consulting",
+      "shortDescription": "Strategic technology consulting to drive business transformation.",
+      "fullDescription": "Get expert guidance on technology strategy, digital transformation, and software architecture. Our consultants help you make informed decisions about your technology investments.",
+      "icon": "fa-lightbulb",
+      "features": [
+        "Technology Strategy",
+        "Digital Transformation",
+        "Architecture Design",
+        "Technical Due Diligence",
+        "Performance Optimization",
+        "Security Audits"
+      ],
+      "technologies": ["Various based on needs"],
+      "pricing": {
+        "hourly": "$150 - $300/hour",
+        "project": "Custom Quote",
+        "retainer": "$5,000+/month"
+      }
+    }
+  ]
+}

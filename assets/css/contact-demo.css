@@ -1,0 +1,534 @@
+/* ==================== Contact & Demo Pages Styles ==================== */
+
+/* Contact Form */
+.contact-form-wrapper {
+    background: var(--bg-card);
+    padding: 3.5rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(6, 182, 212, 0.08);
+}
+
+.contact-info-wrapper {
+    background: var(--gradient-main);
+    padding: 3.5rem;
+    border-radius: 16px;
+    height: 100%;
+    color: var(--white);
+}
+
+.contact-info-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2.3rem;
+    border-radius: 14px;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(6, 182, 212, 0.15);
+}
+
+.contact-info-item {
+    display: flex;
+    gap: 1.3rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-info-item:last-child {
+    border-bottom: none;
+}
+
+.contact-icon {
+    width: 55px;
+    height: 55px;
+    background: rgba(6, 182, 212, 0.18);
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: 1px solid rgba(6, 182, 212, 0.25);
+}
+
+.contact-icon i {
+    color: var(--cyan-accent);
+    font-size: 1.4rem;
+}
+
+.contact-text h4 {
+    font-size: 1.12rem;
+    color: var(--white);
+    margin-bottom: 0.4rem;
+    font-weight: 700;
+}
+
+.contact-text a {
+    color: var(--light-gray);
+    transition: color 0.25s ease;
+}
+
+.contact-text a:hover {
+    color: var(--cyan-accent);
+}
+
+.contact-text p {
+    margin: 0;
+}
+
+.social-links-large {
+    display: flex;
+    gap: 0.9rem;
+    margin-top: 1.8rem;
+}
+
+.social-link-item {
+    width: 50px;
+    height: 50px;
+    background: rgba(6, 182, 212, 0.18);
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cyan-accent);
+    transition: all 0.25s ease;
+    border: 1px solid rgba(6, 182, 212, 0.25);
+}
+
+.social-link-item:hover {
+    background: var(--cyan-accent);
+    color: var(--primary-navy);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(6, 182, 212, 0.3);
+}
+
+/* Map Section */
+.map-iframe {
+    border: 0;
+}
+
+/* Demo Page */
+.demo-form-wrapper {
+    background: var(--bg-card);
+    padding: 3.5rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(6, 182, 212, 0.08);
+}
+
+.demo-icon {
+    width: 110px;
+    height: 110px;
+    background: var(--gradient-main);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.8rem;
+    box-shadow: 0 12px 32px rgba(6, 182, 212, 0.25);
+}
+
+.demo-icon i {
+    font-size: 3.3rem;
+    color: var(--cyan-accent);
+}
+
+.form-section-title {
+    font-size: 1.35rem;
+    color: var(--primary-navy);
+    margin-bottom: 1.3rem;
+    padding-bottom: 0.7rem;
+    border-bottom: 3px solid var(--cyan-accent);
+    font-weight: 800;
+}
+
+/* Service Selection */
+.service-selection {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+    margin-top: 0.8rem;
+}
+
+.service-checkbox-card {
+    position: relative;
+    border: 2px solid rgba(6, 182, 212, 0.15);
+    border-radius: 12px;
+    padding: 1.2rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    background: var(--bg-light);
+}
+
+.service-checkbox-card:hover {
+    border-color: var(--cyan-accent);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(6, 182, 212, 0.12);
+}
+
+.service-checkbox-card input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.service-checkbox-card.selected {
+    background: rgba(6, 182, 212, 0.05);
+    border-color: var(--cyan-accent);
+}
+
+.service-card-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    position: relative;
+}
+
+.service-icon-wrapper {
+    width: 45px;
+    height: 45px;
+    background: var(--gradient-main);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.service-icon-wrapper i {
+    color: var(--cyan-accent);
+    font-size: 1.3rem;
+}
+
+.service-info {
+    flex: 1;
+}
+
+.service-info h5 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-navy);
+    margin-bottom: 0.3rem;
+}
+
+.service-info p {
+    font-size: 0.85rem;
+    color: var(--medium-gray);
+    margin: 0;
+    line-height: 1.4;
+}
+
+.service-check-icon {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 28px;
+    height: 28px;
+    background: var(--cyan-accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.25s ease;
+    box-shadow: 0 2px 8px rgba(6, 182, 212, 0.3);
+}
+
+.service-check-icon i {
+    color: white;
+    font-size: 0.85rem;
+}
+
+.service-checkbox-card input[type="checkbox"]:checked ~ .service-card-content .service-check-icon {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Selected Services Summary */
+.selected-services-summary {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: rgba(6, 182, 212, 0.05);
+    border-radius: 8px;
+    border: 1px solid rgba(6, 182, 212, 0.15);
+    display: none;
+}
+
+.selected-services-summary.show {
+    display: block;
+}
+
+.selected-services-summary h6 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--primary-navy);
+    margin-bottom: 0.5rem;
+}
+
+.selected-service-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.selected-service-tag {
+    padding: 0.4rem 0.8rem;
+    background: var(--cyan-accent);
+    color: white;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.selected-service-tag i {
+    font-size: 0.7rem;
+    cursor: pointer;
+}
+
+.services-error-hidden {
+    display: none !important;
+}
+
+/* Expect Cards */
+.expect-card {
+    background: var(--bg-light);
+    padding: 2.3rem;
+    border-radius: 16px;
+    box-shadow: 0 3px 16px rgba(0, 0, 0, 0.07);
+    text-align: center;
+    height: 100%;
+    position: relative;
+    padding-top: 3.5rem;
+    border: 1px solid rgba(6, 182, 212, 0.08);
+    transition: all 0.3s ease;
+}
+
+.expect-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(6, 182, 212, 0.12);
+    border-color: var(--cyan-accent);
+}
+
+.expect-number {
+    position: absolute;
+    top: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 55px;
+    height: 55px;
+    background: var(--gradient-main);
+    color: var(--cyan-accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7rem;
+    font-weight: 900;
+    box-shadow: 0 6px 20px rgba(6, 182, 212, 0.25);
+}
+
+.expect-icon {
+    font-size: 2.8rem;
+    color: var(--cyan-accent);
+    margin-bottom: 1.3rem;
+}
+
+.expect-card h4 {
+    font-size: 1.28rem;
+    color: var(--primary-navy);
+    margin-bottom: 0.9rem;
+    font-weight: 700;
+}
+
+.expect-card p {
+    color: var(--medium-gray);
+    margin: 0;
+    line-height: 1.7;
+}
+
+/* Accordion */
+.accordion-item {
+    border: 1px solid rgba(6, 182, 212, 0.08);
+    border-radius: 10px;
+    margin-bottom: 0.9rem;
+    overflow: hidden;
+}
+
+.accordion-button {
+    background: var(--bg-card);
+    color: var(--primary-navy);
+    font-weight: 600;
+    padding: 1.3rem;
+}
+
+.accordion-button:not(.collapsed) {
+    background: var(--bg-light);
+    color: var(--cyan-accent);
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.2rem rgba(6, 182, 212, 0.12);
+}
+
+.accordion-body {
+    padding: 1.3rem;
+    background: var(--bg-card);
+    color: var(--dark-gray);
+    line-height: 1.7;
+}
+
+/* Quick CTA Section */
+.quick-cta .btn-primary {
+    background: var(--cyan-accent);
+    border: none;
+    padding: 1rem 2.3rem;
+    border-radius: 28px;
+    font-weight: 600;
+    box-shadow: 0 6px 20px rgba(6, 182, 212, 0.25);
+    color: var(--white);
+    transition: all 0.3s ease;
+}
+
+.quick-cta .btn-primary:hover {
+    background: #0891b2;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 28px rgba(6, 182, 212, 0.35);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-form-wrapper,
+    .contact-info-wrapper,
+    .demo-form-wrapper {
+        padding: 2.5rem;
+    }
+    
+    .service-selection {
+        grid-template-columns: 1fr;
+    }
+    
+    .social-links-large {
+        justify-content: center;
+    }
+    
+    /* Footer mobile alignment */
+    .footer .col-lg-4,
+    .footer .col-lg-2,
+    .footer .col-lg-3,
+    .footer .col-md-6 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    .footer-links,
+    .footer-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    /* Form buttons centering */
+    .contact-form-wrapper .btn,
+    .demo-form-wrapper .btn {
+        width: 100%;
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    
+    /* CTA buttons mobile layout */
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-section .btn,
+    .quick-cta .btn {
+        width: 100%;
+        max-width: 320px;
+        margin: 8px 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .contact-form-wrapper,
+    .contact-info-wrapper,
+    .demo-form-wrapper {
+        padding: 2rem;
+    }
+    
+    .expect-card {
+        padding: 2rem 1.5rem;
+        padding-top: 3rem;
+    }
+    
+    .demo-icon {
+        width: 95px;
+        height: 95px;
+    }
+    
+    .demo-icon i {
+        font-size: 2.8rem;
+    }
+    
+    .quick-cta .btn-primary {
+        width: 100%;
+        max-width: 320px;
+    }
+    
+    /* Form buttons full width centering */
+    .contact-form-wrapper .btn,
+    .demo-form-wrapper .btn {
+        width: 100%;
+        max-width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    
+    /* Footer mobile center alignment */
+    .footer .col-lg-4,
+    .footer .col-lg-2,
+    .footer .col-lg-3,
+    .footer .col-md-6 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    .footer-links,
+    .footer-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-contact li {
+        justify-content: center;
+    }
+    
+    .social-links,
+    .social-links-large {
+        justify-content: center;
+    }
+    
+    /* CTA buttons full width on mobile */
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    .cta-section .btn,
+    .quick-cta .btn {
+        width: 100%;
+        max-width: 280px;
+        margin: 8px 0;
+        padding: 0.9rem 1.8rem;
+    }
+}

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Pent X Software Solutions - Get in touch for custom software development, web apps, and mobile solutions in Sri Lanka.">
+    
+    <title>Contact Us - Pent X</title>
+    
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Balthazar&family=Share+Tech&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/contact-demo.css">
+    
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="brand-text">Pent <span class="brand-highlight">X</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Solutions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Success</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link btn-demo" href="demo.html">Book a Demo</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="page-title">Contact Us</h1>
+                    <p class="page-subtitle">Get in touch with our team to discuss your project or ask any questions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section py-5">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Contact Form -->
+                <div class="col-lg-7">
+                    <div class="contact-form-wrapper">
+                        <h2 class="mb-4">Send Us a Message</h2>
+                        <form id="contactForm" class="needs-validation" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label">Full Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                    <div class="invalid-feedback">
+                                        Please enter your name.
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email Address <span class="text-danger">*</span></label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                    <div class="invalid-feedback">
+                                        Please enter a valid email address.
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="+94 77 123 4567">
+                                </div>
+                                <div class="col-12">
+                                    <label for="subject" class="form-label">Subject <span class="text-danger">*</span></label>
+                                    <select class="form-select" id="subject" name="subject" required>
+                                        <option value="" selected disabled>Choose a subject...</option>
+                                        <option value="general">General Inquiry</option>
+                                        <option value="web">Web Development</option>
+                                        <option value="mobile">Mobile App Development</option>
+                                        <option value="uiux">UI/UX Design</option>
+                                        <option value="cloud">Cloud Solutions</option>
+                                        <option value="support">Technical Support</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please select a subject.
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+                                    <textarea class="form-control" id="message" name="message" rows="6" required></textarea>
+                                    <div class="invalid-feedback">
+                                        Please enter your message.
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-lg w-100">
+                                        <i class="fas fa-paper-plane me-2"></i> Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <div id="formMessage" class="alert mt-3 form-message-hidden"></div>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="col-lg-5">
+                    <div class="contact-info-wrapper">
+                        <h2 class="mb-4">Get in Touch</h2>
+                        <p class="mb-4">We're here to help and answer any questions you might have. We look forward to hearing from you!</p>
+                        
+                        <!-- Contact Details -->
+                        <div class="contact-info-card mb-4">
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Location</h4>
+                                    <p>Colombo, Sri Lanka</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Phone</h4>
+                                    <p><a href="tel:+94771234567">+94 77 550 8185</a></p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Email</h4>
+                                    <p><a href="mailto:info@pentx.lk">pentxcorporation@gmail.com</a></p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Business Hours</h4>
+                                    <p>Mon - Fri: 9:00 AM - 6:00 PM<br>Sat: 9:00 AM - 1:00 PM<br>Sun: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Media -->
+                        <div class="contact-social">
+                            <h4 class="mb-3">Follow Us</h4>
+                            <div class="social-links-large">
+                                <a href="#" aria-label="LinkedIn" class="social-link-item">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="#" aria-label="Twitter" class="social-link-item">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" aria-label="Facebook" class="social-link-item">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#" aria-label="GitHub" class="social-link-item">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" aria-label="Instagram" class="social-link-item">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container-fluid p-0">
+            <div class="map-wrapper">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253682.62280970242!2d79.69531749140626!3d6.921837399999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae253d10f7a7003%3A0x320b2e4d32d3838d!2sColombo%2C%20Sri%20Lanka!5e0!3m2!1sen!2s!4v1234567890123" 
+                    width="100%" 
+                    height="450" 
+                    class="map-iframe"
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Pent X Location Map">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick CTA Section -->
+    <section class="quick-cta py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="mb-3">Prefer a Quick Demo?</h2>
+                    <p class="lead mb-4">Schedule a free demo session with our team to see our solutions in action.</p>
+                    <a href="demo.html" class="btn btn-primary btn-lg">Book a Free Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-title">
+                        <span class="brand-text">Pent <span class="brand-highlight">X</span></span>
+                    </h5>
+                    <p class="text-muted">We Build Smart Software for Businesses.</p>
+                    <div class="social-links mt-3">
+                        <a href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www/x.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61581018747852" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.github.com" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Solutions</a></li>
+                        <li><a href="projects.html">Success</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="demo.html">Book a Demo</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="services.html#web-development">Web Development</a></li>
+                        <li><a href="services.html#mobile-apps">Mobile Apps</a></li>
+                        <li><a href="services.html#uiux-design">UI/UX Design</a></li>
+                        <li><a href="services.html#cloud-solutions">Cloud Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Contact Us</h5>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Colombo, Sri Lanka</li>
+                        <li><i class="fas fa-phone me-2"></i> +94 77 550 8185</li>
+                        <li><i class="fas fa-envelope me-2"></i>pentxcorporation@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0 text-muted">&copy; 2025 Pent X Software Solutions. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/forms.js"></script>
+</body>
+</html>

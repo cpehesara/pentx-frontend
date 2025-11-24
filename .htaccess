@@ -1,0 +1,167 @@
+# Pent X Website - Apache .htaccess Configuration
+
+# ==================== HTTPS Redirect ====================
+# Redirect all HTTP traffic to HTTPS
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# ==================== WWW Redirect ====================
+# Redirect www to non-www (or vice versa)
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+# ==================== Remove .html Extension ====================
+# Remove .html extension from URLs
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+# Redirect .html URLs to clean URLs
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^\ ]+)\.html
+RewriteRule ^([^\.]+)\.html$ /$1 [R=301,L]
+
+# ==================== Default File ====================
+DirectoryIndex index.html index.php
+
+# ==================== Error Pages ====================
+ErrorDocument 404 /404.html
+ErrorDocument 500 /500.html
+
+# ==================== Security Headers ====================
+# Prevent clickjacking
+Header always set X-Frame-Options "SAMEORIGIN"
+
+# XSS Protection
+Header set X-XSS-Protection "1; mode=block"
+
+# Prevent MIME type sniffing
+Header set X-Content-Type-Options "nosniff"
+
+# Referrer Policy
+Header set Referrer-Policy "strict-origin-when-cross-origin"
+
+# Content Security Policy (adjust as needed)
+Header set Content-Security-Policy "default-src 'self' https:; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:;"
+
+# ==================== Cache Control ====================
+# Cache static assets
+<IfModule mod_expires.c>
+    ExpiresActive On
+    
+    # Images
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    
+    # CSS and JavaScript
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType text/javascript "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType application/x-javascript "access plus 1 month"
+    
+    # Fonts
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType font/ttf "access plus 1 year"
+    ExpiresByType font/otf "access plus 1 year"
+    ExpiresByType application/font-woff "access plus 1 year"
+    
+    # HTML
+    ExpiresByType text/html "access plus 1 hour"
+    
+    # JSON
+    ExpiresByType application/json "access plus 0 seconds"
+</IfModule>
+
+# ==================== Compression ====================
+# Enable GZIP compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE text/javascript
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/x-javascript
+    AddOutputFilterByType DEFLATE application/json
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/atom_xml
+    AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# ==================== Browser Caching ====================
+<IfModule mod_headers.c>
+    # Cache static assets
+    <FilesMatch "\.(ico|jpg|jpeg|png|gif|svg|webp|css|js|woff|woff2|ttf|otf)$">
+        Header set Cache-Control "max-age=31536000, public"
+    </FilesMatch>
+    
+    # Don't cache HTML
+    <FilesMatch "\.(html|htm)$">
+        Header set Cache-Control "no-cache, no-store, must-revalidate"
+        Header set Pragma "no-cache"
+        Header set Expires 0
+    </FilesMatch>
+</IfModule>
+
+# ==================== File Protection ====================
+# Protect sensitive files
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Protect .htaccess
+<Files .htaccess>
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Protect configuration files
+<FilesMatch "\.(json|xml|yml|log|config)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Allow specific JSON files for data
+<FilesMatch "^(services|projects|pricing|team)\.json$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+# ==================== PHP Security (if using PHP) ====================
+# Disable directory browsing
+Options -Indexes
+
+# Disable PHP execution in uploads directory
+<Directory "assets/images">
+    php_flag engine off
+</Directory>
+
+# ==================== Force UTF-8 Encoding ====================
+AddDefaultCharset UTF-8
+
+# ==================== Performance ====================
+# Enable Keep-Alive
+<IfModule mod_headers.c>
+    Header set Connection keep-alive
+</IfModule>
+
+# ==================== Redirects ====================
+# Add any specific redirects here
+# Example: Redirect 301 /old-page.html /new-page
+
+# ==================== Custom MIME Types ====================
+AddType image/svg+xml .svg
+AddType image/webp .webp
+AddType application/font-woff .woff
+AddType application/font-woff2 .woff2
+
+# ==================== END ====================
